@@ -1,11 +1,167 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<meta name="viewport" content="width=device-width" />
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>Join us at the next Tech Under Thirty event!</title>
+<meta charset="UTF-8">
+<title>Join us at the next Tech Under Thirty event!</title>
+<style type="text/css">
+/* ------------------------------------- 
+		GLOBAL 
+------------------------------------- */
+* { 
+	margin:0;
+	padding:0;
+}
+* { font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
 
-	<link rel="stylesheet" type="text/css" href="stylesheets/email.css" />
+img { 
+	max-width: 100%; 
+}
+.collapse {
+	margin:0;
+	padding:0;
+}
+body {
+	-webkit-font-smoothing:antialiased; 
+	-webkit-text-size-adjust:none; 
+	width: 100%!important; 
+	height: 100%;
+}
+
+
+/* ------------------------------------- 
+		ELEMENTS 
+------------------------------------- */
+a { color: #7a9833;}
+
+table.meta {
+	background-color: #ebebeb;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+table.meta span {
+	font-size: 13px;
+	text-transform: uppercase;
+	color:#00937c; 
+	font-weight:bold;
+}
+
+/* ------------------------------------- 
+		HEADER 
+------------------------------------- */
+table.head-wrap { width: 100%;}
+
+.header.container table td.logo { padding: 15px; }
+.header.container table td.label { padding: 15px; padding-left:0px;}
+
+
+/* ------------------------------------- 
+		BODY 
+------------------------------------- */
+table.body-wrap { width: 100%;}
+
+
+/* ------------------------------------- 
+		FOOTER 
+------------------------------------- */
+table.footer-wrap { width: 100%; clear:both!important;  }
+
+.footer-wrap .container td.content  p { border-top: 1px solid rgb(215,215,215); padding-top:15px; 	font-size:10px;}
+.footer-wrap .container td.content p {
+	font-size:10px;
+	font-weight: bold;
+}
+
+
+/* ------------------------------------- 
+		TYPOGRAPHY 
+------------------------------------- */
+h1,h2,h3,h4,h5,h6 {
+font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; line-height: 1.1; margin-bottom:15px; color:#000;
+}
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small { font-size: 60%; color: #6f6f6f; line-height: 0; text-transform: none; }
+
+h1 { font-size: 32px; color:#00937c; }
+h2 { font-weight:200; font-size: 37px;}
+h3 { font-size: 25px;}
+h4 { font-weight:500; font-size: 23px;}
+h5 { font-weight:900; font-size: 17px;}
+h6 { font-weight:900; font-size: 14px; text-transform: uppercase; color:#444;}
+
+.collapse { margin:0!important;}
+
+p, ul { 
+	margin-bottom: 10px; 
+	font-weight: normal; 
+	font-size:14px; 
+	line-height:1.6;
+}
+
+ul li {
+	margin-left:5px;
+	list-style-position: inside;
+}
+
+
+/* --------------------------------------------------- 
+		RESPONSIVENESS
+		Nuke it from orbit. It's the only way to be sure. 
+------------------------------------------------------ */
+
+/* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
+.container {
+	display:block!important;
+	max-width:600px!important;
+	margin:0 auto!important; /* makes it centered */
+	clear:both!important;
+}
+
+/* This should also be a block element, so that it will fill 100% of the .container */
+.content {
+	padding:15px;
+	max-width:600px;
+	margin:0 auto;
+	display:block; 
+}
+
+/* Let's make sure tables in the content area are 100% wide */
+.content table { width: 100%; }
+
+
+/* Odds and ends */
+.column {
+	width: 300px;
+	float:left;
+}
+.column tr td { padding: 15px; }
+.column-wrap { 
+	padding:0!important; 
+	margin:0 auto; 
+	max-width:600px!important;
+}
+.column table { width:100%;}
+
+/* Be sure to place a .clear element after each set of columns, just to be safe */
+.clear { display: block; clear: both; }
+
+
+/* ------------------------------------------- 
+		PHONE
+		For clients that support media queries.
+		Nothing fancy. 
+-------------------------------------------- */
+@media only screen and (max-width: 600px) {
+	
+	a[class="btn"] { display:block!important; margin-bottom:10px!important; background-image:none!important; margin-right:0!important;}
+
+	div[class="column"] { width: auto!important; float:none!important;}
+	
+	table.social div[class="column"] {
+		width:auto!important;
+	}
+
+}
+</style>
 </head>
  
 <body bgcolor="#FFFFFF">
@@ -18,11 +174,11 @@
 			<div class="content">
 				<table>
 					<tr>
-						<td><img src="assets/tut-logo.png" alt="Tech Under Thirty" /></td>
+						<td><a href="http://www.techunderthirty.com"><img src="http://www.techunderthirty.com/storage/img/tut-logo.png" alt="Tech Under Thirty"></a></td>
 					</tr>
 
 					<tr>
-						<td><img src="assets/banner-wide.png" alt="Ultra-Awesome Update!" /></td>
+						<td><img src="http://www.techunderthirty.com/storage/img/banner-wide.png" alt="Ultra-Awesome Update!"></td>
 					</tr>
 				</table>
 			</div>
@@ -31,7 +187,7 @@
 	</tr>
 </table><!-- /HEADER -->
 
-<table class="head-wrap" bgcolor="#FFFFFF" background="assets/header.jpg" height="12">
+<table class="head-wrap" bgcolor="#FFFFFF" background="http://www.techunderthirty.com/storage/img/header-new.jpg" height="12">
 
 </table>
 
@@ -47,7 +203,7 @@
 					<td>
 						<table class="meta" width="100%">
 							<tr>
-								<td mc:edit="header" mc:allowtext>
+								<td mc:edit="header" mc:allowtext="">
 									<span>Mailed to you on April 2, 2013</span>
 								</td>
 							</tr>
@@ -67,7 +223,7 @@
 								<li>want to meet cool people!</li>
 							</ul>
 						</p>
-						<br />
+						<br>
 						<h3>For those without ideas</h3>
 						<p>Want to come and build something, but aren't sure what? Check out the <a href="http://techunderthirty.com/2013/03/19/sample-problems-for-interaction-night/">sample problems for Interaction Night</a> we posted yesterday.</p>
 						<p>We’re so excited to see you tonight! There's still time to <a href="http://tutinteraction.eventbrite.com/">sign up for Interaction Night here.</a></p>
@@ -98,7 +254,7 @@
 						<p style="font-size: 13px;">You received this email because you joined Tech Under Thirty's subscriber list.</p>
 						<p style="font-size: 13px;">Not able to view it properly? <a href="*|ARCHIVE|*">Click here to view it in your browser</a>.</p>
 						<p style="font-size: 12px;"><a href="*|UNSUB|*">To unsubscribe, click here.</a></p>
-						<p style="font-size: 13px;">*|REWARDS|*</p>
+						<p style="font-size: 13px;">*|REWARDS_TEXT|*</p>
 					</td>
 				</tr>
 			</table>
